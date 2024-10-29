@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <!-- Gambar Item -->
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/menu1" />
+
+    <!-- Nama dan Harga Item -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Name"
+            android:textSize="16dp"
+            android:fontFamily="@font/roboto_regular"/>
+
+        <TextView
+            android:id="@+id/item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp 0"
+            android:textSize="16dp"
+            android:fontFamily="@font/roboto_regular"/>
+    </LinearLayout>
+
+    <!-- Kuantitas dan Tombol Tambah/Kurang -->
+    <TextView
+        android:id="@+id/item_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="16dp"
+        android:fontFamily="@font/roboto_regular"/>
+
+    <Button
+        android:id="@+id/decrease_quantity"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/increase_quantity"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="+" />
+
+</LinearLayout>
